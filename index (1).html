@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+    <style>
+      /* 1.
+        apply global configs
+      */
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      /* 2. 
+        - apply Segoe UI font for global style 
+    */
+      html,
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      /* 3.
+        - apply any background images from https://www.pexels.com/ (Note:* choose a landscape type of images)
+        - all text to white
+        - height of the parent container should be 100% in view port height
+        - apply 32 pixels of padding in all sides except top using rem unit
+        - apply a space on top using padding with a value of 15rem using pixels unit.
+        - all text should place to center
+    */
+      #main {
+        background: url("https://images.pexels.com/photos/8892/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+          no-repeat center center/cover;
+        height: 100vh;
+        color: #fff;
+        padding: 250px 2rem 2rem 2rem;
+        text-align: center;
+      }
+      /* 4.
+        - apply a font size of 3rem in all heading tags
+    */
+      h1,
+      h3 {
+        font-size: 3em;
+        margin: 1rem 0;
+      }
+      /* 5. 
+        - apply a margin of 1rem for top and bottom and 0 to left and right
+    */
+
+      /* 6. achor tag
+        - button should be displayed inline block
+        - remove underline
+        - apply a white background
+        - apply any color you want on the text
+        - apply a space inside of 0.75rem for top and bottom and 2rem for left and right;
+    */
+      a {
+        display: inline-block;
+        text-decoration: none;
+        background: #fff;
+        color: rgb(14, 0, 36);
+        padding: 0.75rem 2rem;
+        margin: 2rem;
+      }
+      /* 7. section
+        - apply a space in all sides of 2 rem
+    */
+
+      /* 8. media queries
+        - inspect the browser and use the mobile inspect tool 
+        - pixel 2 XL, iphone 5 SE, iphone X, ipad,ipad pro
+        - all identified devices above should be configured and use
+        necessary changes on their default css rule for mobile responsiveness
+        - use inline styling for this one
+    */
+      /* pixel 2 XL */
+      @media (min-width: 376px) and (max-width: 411px) {
+        #main {
+          background: url("https://images.pexels.com/photos/1564304/nature-sky-moon-clouds-1564304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+            no-repeat center center/cover;
+          height: 100vh;
+          color: #fff;
+          padding: 100px 2rem 2rem 2rem;
+          text-align: center;
+        }
+        h1,
+        h3 {
+          font-size: 2em;
+          margin: 1rem 0;
+        }
+        a {
+          display: inline-block;
+          text-decoration: none;
+          background: #fff;
+          color: rgb(14, 0, 36);
+          padding: 0.75rem 2rem;
+          margin: 1rem;
+        }
+      }
+      /* iphone 5/SE */
+      @media (max-width: 320px) {
+        #main {
+          background: url("https://images.pexels.com/photos/1302435/pexels-photo-1302435.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+            no-repeat center center/cover;
+          height: 100vh;
+          color: #fff;
+          padding: 80px 2rem 2rem 2rem;
+          text-align: center;
+        }
+        h1,
+        h3 {
+          font-size: 1.5em;
+          margin: 0.75rem 0;
+        }
+        a {
+          display: inline-block;
+          text-decoration: none;
+          background: #fff;
+          color: rgb(14, 0, 36);
+          padding: 0.5rem 1rem;
+          margin: 1rem;
+          font-size: 0.75em;
+        }
+        p {
+          font-size: 0.75em;
+        }
+      }
+      /* iphone X */
+      @media (min-width: 321px) and (max-width: 375px) {
+        #main {
+          background: url("https://images.pexels.com/photos/3901102/pexels-photo-3901102.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+            no-repeat center center/cover;
+          height: 100vh;
+          color: #fff;
+          padding: 135px 2rem 2rem 2rem;
+          text-align: center;
+        }
+        h1,
+        h3 {
+          font-size: 2em;
+          margin: 1rem 0;
+        }
+        a {
+          display: inline-block;
+          text-decoration: none;
+          background: #fff;
+          color: rgb(14, 0, 36);
+          padding: 0.5rem 1.3rem;
+          margin: 1rem;
+        }
+      }
+      /* ipad */
+      @media (min-width: 412px) and (max-width: 768px) {
+        #main {
+          background: url("https://images.pexels.com/photos/1376201/pexels-photo-1376201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+            no-repeat center center/cover;
+          height: 100vh;
+          color: #fff;
+          padding: 250px 2rem 2rem 2rem;
+          text-align: center;
+        }
+        h1,
+        h3 {
+          font-size: 2.9em;
+          margin: 1rem 0;
+        }
+        a {
+          display: inline-block;
+          text-decoration: none;
+          background: #fff;
+          color: rgb(14, 0, 36);
+          padding: 0.7rem 2rem;
+          margin: 1rem;
+          font-size: 1.4em;
+        }
+        p {
+          font-size: 1.4em;
+        }
+      }
+      /* ipad pro */
+      @media (min-width: 769px) and (max-width: 1024px) {
+        #main {
+          background: url("https://images.pexels.com/photos/5093980/pexels-photo-5093980.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+            no-repeat center center/cover;
+          height: 100vh;
+          color: #fff;
+          padding: 320px 2rem 2rem 2rem;
+          text-align: center;
+        }
+        h1,
+        h3 {
+          font-size: 3.3em;
+          margin: 1rem 0;
+        }
+        a {
+          display: inline-block;
+          text-decoration: none;
+          background: #fff;
+          color: rgb(14, 0, 36);
+          padding: 0.75rem 2rem;
+          margin: 1rem;
+          font-size: 1.8em;
+        }
+        p {
+          font-size: 1.8em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <header>
+        <h1>Welcome To Our Website</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          necessitatibus sunt recusandae a facere totam?
+        </p>
+        <a href="#" class="btn">Find Out More</a>
+      </header>
+
+      <section>
+        <h3>About Our Company</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+          repellendus nulla eaque maxime in eveniet aut, cumque reiciendis fugit
+          voluptas saepe distinctio voluptatem excepturi quam rerum tempore
+          debitis possimus? Aliquid adipisci dolorum doloribus voluptate
+          doloremque sed libero dignissimos itaque cumque qui totam, nemo
+          molestiae amet architecto dolore nihil ipsa facilis?
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
